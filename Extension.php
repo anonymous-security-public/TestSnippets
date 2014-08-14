@@ -27,6 +27,11 @@ class Extension extends \Bolt\BaseExtension
 
     }
 
+    public function getName()
+    {
+        return "Test Snippets";
+    }
+
     function initialize() {
 
         $this->insertSnippet(SnippetLocation::START_OF_HEAD, 'callback', "startofhead");
