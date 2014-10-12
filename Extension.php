@@ -1,7 +1,7 @@
 <?php
 // Testing Snippets extension for Bolt
 
-namespace TestSnippets;
+namespace Bolt\Extension\Bolt\TestSnippets;
 
 use Bolt\Extensions\Snippets\Location as SnippetLocation;
 
