@@ -12,8 +12,8 @@ class Extension extends \Bolt\BaseExtension
         return "Test Snippets";
     }
 
-    function initialize() {
-
+    public function initialize()
+    {
         $this->insertSnippet(SnippetLocation::START_OF_HEAD, 'callback', "startofhead");
         $this->insertSnippet(SnippetLocation::START_OF_HEAD, "<!-- inserted string snippet startofhead -->");
 
@@ -48,9 +48,8 @@ class Extension extends \Bolt\BaseExtension
         $this->insertSnippet(SnippetLocation::AFTER_HTML, "<!-- inserted string snippet afterhtml -->");
     }
 
-
-    function callback($var) {
-
+    public function callback($var)
+    {
         $html = "<!-- snippet inserted via callback with parameter '$var'.. -->";
 
         return new \Twig_Markup($html, 'UTF-8');
