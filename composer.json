@@ -1,5 +1,5 @@
 {
-    "name": "bolt/TestSnippets",
+    "name": "bolt/testsnippets",
     "description": "A developer extension to add snippets to all available locations in a sensible HTML document.",
     "type": "bolt-extension",
     "keywords": [],
