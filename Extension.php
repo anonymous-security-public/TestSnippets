@@ -7,26 +7,6 @@ use Bolt\Extensions\Snippets\Location as SnippetLocation;
 
 class Extension extends \Bolt\BaseExtension
 {
-
-    function info() {
-
-        $data = array(
-            'name' =>"Snippets Tester",
-            'description' => "A developer extension to add snippets to all available locations in a sensible HTML document.",
-            'author' => "Bob den Otter",
-            'link' => "http://bolt.cm",
-            'version' => "1.1",
-            'required_bolt_version' => "1.0",
-            'highest_bolt_version' => "1.0",
-            'type' => "Twig function",
-            'first_releasedate' => "2012-10-10",
-            'latest_releasedate' => "2013-01-27",
-        );
-
-        return $data;
-
-    }
-
     public function getName()
     {
         return "Test Snippets";
